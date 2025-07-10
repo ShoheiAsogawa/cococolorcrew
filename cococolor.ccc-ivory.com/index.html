@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="fav.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
+<title>CocoColor</title>
+
+<!--CSS -->
+<link href="assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/luxbar.min.css">
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/custom.css" />
+<link rel="canonical" href="http://cococolor.ccc-ivory.com" />
+<meta name="description" content="大阪市港区の児童発達支援・放課後等デイサービス　CocoColor(ココカラー) です。障害や発達に特性のある未就学児から１８歳までのお子様がご利用いただける福祉サービスです。" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="児童発達支援・放課後等デイサービス　CocoColor" />
+<meta property="og:title" content="CocoColor|トップページ" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:description" content="大阪市港区の児童発達支援・放課後等デイサービス　CocoColor(ココカラー) です。障害や発達に特性のある未就学児から１８歳までのお子様がご利用いただける福祉サービスです。" />
+<meta property="og:url" content="cococolor.ccc-ivory.com" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://cococolor.ccc-ivory.com/assets/img/common/hero.png" />
+<meta property="og:image:width" content="1360" />
+<meta property="og:image:height" content="600" />
+
+<!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+<script type="text/javascript">
+            const base = location.host.indexOf('localhost') === -1 ? '/blog' : ''; 
+
+            const request = new XMLHttpRequest(); // 
+            request.open('GET', base + '/api/public/articles/2'); // 
+
+            // リクエストの設定
+            request.setRequestHeader('Content-Type', 'application/json');
+            request.setRequestHeader('Accept', 'application/json');
+            request.addEventListener('load', function () {
+                // 取得完了時の処理
+                if(request.status === 200){
+                    // コンテナとなる要素を取得し、カテゴリ名をPタグに、記事名をulリストに整形して出力する
+                    const container = document.getElementById('target');
+                    const data = JSON.parse(request.responseText);
+
+                    data.articles.slice(0,5).forEach(function(article) {
+                        // 記事単位の要素を作成
+                        const articleHtmlString = `
+<a href="${article.url}" class="row align-items-center mb-3">
+<div class="col-4">
+    <img src="${article.eyeCatch}" alt="" class="img-fluid">
+</div>
+<div class="col-8">
+    <p>
+        <small class="small">${article.title}</small>
+    </p>
+    <h4 class=" text-truncate">
+        ${article.updated_at}
+    </h4>
+    <p class=" text-truncate">
+        ${article.content}
+    </p>
+</div>
+</a>
+`;
+                        const articleContainer = document.createElement('div');
+                        articleContainer.classList.add('index-blog');
+                        articleContainer.innerHTML = articleHtmlString;
+
+                        // 末尾に追加
+                        container.appendChild(articleContainer);
+                    });
+
+                    request.abort();
+                }
+            });
+
+            request.send();
+        </script>
+</head>
+<body>
+<header>
+  <nav id="luxbar" class="luxbar-fixed">
+    <div class="luxbar luxbar-static">
+      <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+        <ul class="luxbar-navigation">
+          <li class="luxbar-header"> <a href="index.html" class="luxbar-brand">CocoColor</a>
+            <label class="luxbar-hamburger luxbar-hamburger-doublespin"
+                        for="luxbar-checkbox"> <span></span> </label>
+          </li>
+          <li class="luxbar-item dropdown"><a href="index.html">CocoColorとは</a>
+            <ul>
+              <li class="luxbar-item" ><a href="process.html">ご利用までの流れ・料金</a></li>
+              <li class="luxbar-item" ><a href="service.html">一日の流れ</a></li>
+              <li class="luxbar-item" ><a href="program.html">プログラム内容</a></li>
+            </ul>
+          </li>
+          <li class="luxbar-item"><a href="blog/">Blog</a></li>
+          <li class="luxbar-item"><a href="contact/contact.html">お問合せ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="d-block d-lg-none d-sm-block my-5">
+		<div class="container">
+		<img src="assets/img/common/hero.png" class="img-fluid d-block mb-5" alt="" >
+            <a href="contact/contact.html" class="btn btn-custom btn-lg d-block">体験・見学を申し込む</a>
+			<a href="https://www.instagram.com/cococolor2022/" target="_blank"><img src="assets/img/lowerPage/instagram.png" class="img-fluid" alt="Instagram"></a>
+			<a href="https://www.facebook.com/profile.php?id=100077639620464" target="_blank"><img src="assets/img/lowerPage/facebook.png" alt="facebook" width="56" class="img-fluid"></a>
+		</div>
+	</div>
+    <div class="container-fluid d-none d-sm-none d-lg-block">
+	<div class="hero d-flex align-items-center mb-5 row">
+       <div class="text-left mx-5 bottom"><a href="contact/contact.html" class="btn btn-custom btn-lg">体験・見学を申し込む</a></div>
+	   <div class="custom002"><a href="https://www.instagram.com/cococolor2022/" target="_blank"><img src="assets/img/lowerPage/instagram.png" class="img-fluid" alt="Instagram"></a></div>
+	   <div class="custom003"><a href="https://www.facebook.com/profile.php?id=100077639620464" target="_blank"><img src="assets/img/lowerPage/facebook.png" alt="facebook" width="56" class="img-fluid"></a></div>
+    </div>
+    </div>
+</header>
+<main>
+  <section id="">
+    <div class="container mb-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6"><img src="assets/img/lowerPage/i-001.png" alt="" class="img-fluid"></div>
+        <div class="col-md-6">
+          <h2><small class="lead">児童発達支援・放課後デイサービス</small><br>
+            CocoColor</h2>
+          <p>児童発達支援・放課後等デイサービスとは、障害のあるお子様や発達に特性のあるお子様のための福祉サービスです。</p>
+          <p>3歳から18歳までの就学年齢のお子様が通うことができます。</p>
+		  <p>児童発達支援管理責任者が作成する個別支援計画に基づいて、自立支援と日常生活の充実のための活動などを行います。</p>
+          <a href="contact/contact.html" class="btn btn-custom btn-md">体験・見学</a> </div>
+      </div>
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-md-6"><img src="assets/img/lowerPage/i-002.png" alt="" class="img-fluid"></div>
+        <div class="col-md-6">
+          <h2>CocoColorの理念</h2>
+          <p class="lead">子どもたちの得意を伸ばす、安心できる居場所づくり、共生社会の実現</p>
+          <p>こころとからだに働きかける多彩なソーシャルスキルトレーニングで子どもたちの得意を伸ばします。</p>
+		  <p>子どもたちや保護者様との信頼形成を重視し、誰もが心地よさを感じ、安心できる居場所づくりを行います。</p>
+		  <p>子どもたち一人一人の人格、多様性を尊重し、認め合い、支え合うことができる社会の実現を目指します。</p>
+          <a href="program.html" class="btn btn-custom btn-md mb-3">プログラム内容</a>	　<a href="contact/contact.html" class="btn btn-custom btn-md mb-3">体験・見学</a> </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mb-5">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h1 class="sm-small md-small">みんなで一緒に楽しめる、<br>
+            さまざまな年間行事を予定しています！</h1>
+          <img src="assets/img/lowerPage/i-003.png" alt="" class="img-fluid"></div>
+      </div>
+      <div class="row">
+       <div class="col-lg-6 mb-5">
+          <h3>新着ブログ</h3> 
+		  <div  id="target"></div>
+		  </div>
+        <div class="col-lg-6">
+          <h3>イベント情報</h3>
+          <div class="g-cal mb-4">
+            <iframe src="https://calendar.google.com/calendar/embed?src=ccc.ivory2022111%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="100%" height="450" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <a href="contact/contact.html" class="btn btn-custom btn-block">体験・見学</a> </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mb-5">
+      <h2 class="text-center mb-5">利用時間</h2>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <table class="table">
+            <tr>
+              <th>営業日</th>
+              <td>月曜日〜金曜日</td>
+            </tr>
+            <tr>
+              <th>定休日</th>
+              <td>土曜、日曜、祝日<br>
+				  夏季休暇、年末年始休暇</td>
+            </tr>
+            <tr>
+              <th>定員</th>
+              <td>10名</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table">
+            <tr>
+              <th class="align-middle">サービス提供時間</th>
+              <td>児童発達支援<br>
+				  10：00～12：00<br>
+				  13：00～17：00<br>
+				  放課後等デイサービス<br>
+				  14：00～17：00<br></td>
+            </tr>
+            <tr>
+              <th>送迎</th>
+              <td>あり</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6"> <img src="assets/img/lowerPage/i-004.png" alt="" class="img-fluid"> </div>
+        <div class="col-md-6">
+          <h3>一日の流れ</h3>
+          <p>子どもたち一人ひとりの特性・発達状況に応じた様々なプログラムをご用意しております。</p>
+          <a href="service.html" class="btn btn-custom btn-md">一日の流れを見る</a> <a href="program.html" class="btn btn-custom btn-md">プログラム内容</a> </div>
+      </div>
+    </div>
+  </section>
+  <section id="price">
+    <div class="container mb-5 pb-5">
+      <h2 class="text-center text-white mb-5 py-5">ご利用料金</h2>
+      <div class="row align-items-center justify-content-around">
+        <div class="col-12 col-md-3 bg-white text-center rounded shadow mb-5">
+          <h3 class="h5 py-5">3歳～5歳の<br>
+            利用児童・非課税世帯</h3>
+          <p class="h1 pb-5">0円</p>
+        </div>
+        <div class="col-12 col-md-3 bg-white text-center rounded shadow mb-5">
+          <h3 class="h5 py-5">世帯所得<br>
+            約890万未満</h3>
+          <p class="h1 pb-5">4,600円</p>
+        </div>
+        <div class="col-12 col-md-3 bg-white text-center rounded shadow mb-5">
+          <h3 class="h5 py-5">世帯所得<br>
+            約890万以上</h3>
+          <p class="h1 pb-5">37,200円</p>
+        </div>
+      </div>
+      <div class="text-center"><a href="process.html" class="btn btn-light btn-lg">詳細を見る</a></div>
+    </div>
+  </section>
+  <section>
+    <div class="container mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+		<h1 class="text-left mb-5">アクセス</h1>
+          <table class="table">
+            <tr>
+              <th>事業所名</th>
+              <td>CocoColor</td>
+            </tr>
+            <tr>
+              <th>代表</th>
+              <td>大江 千秋</td>
+            </tr>
+            <tr>
+              <th class="align-middle">住所</th>
+              <td class="align-middle"><small>〒552-0023</small><br>
+                大阪市港区港晴4丁目14-16</td>
+            </tr>
+            <tr>
+              <th>TEL</th>
+              <td>06-6537-7461</td>
+            </tr>
+			  <tr>
+              <th>FAX</th>
+              <td>06-6537-7451</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.9121029512676!2d135.4384351764883!3d34.65692267293517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e887f070eb6b%3A0x602ee683d5dd198d!2z44CSNTUyLTAwMjMg5aSn6Ziq5bqc5aSn6Ziq5biC5riv5Yy65riv5pm077yU5LiB55uu77yR77yU4oiS77yR77yW!5e0!3m2!1sja!2sjp!4v1740802622052!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="row justify-content-around py-4">
+      <div class="col-12 col-lg-9 mt-3">
+        <ul class="list-unstyled list-group list-group-horizontal-md">
+          <li class="mx-2"><a href="index.html">CocoColorとは</a></li>
+          <li class="mx-2"><a href="process.html">ご利用までの流れ・料金</a></li>
+          <li class="mx-2"><a href="service.html">一日の流れ</a></li>
+          <li class="mx-2"><a href="program.html">プログラム内容</a></li>
+          <li class="mx-2"><a href="blog/">Blog</a></li>
+          <li class="mx-2"><a href="process.html#faq">FAQ</a></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="col-12 col-lg-3 mb-5">
+        <div class="text-right my-3"><a href="https://www.facebook.com/profile.php?id=100077639620464" target="_blank"><img src="assets/img/lowerPage/facebook.png" alt="facebook" width="56" class="img-fluid"></a><a href="https://www.instagram.com/cococolor2022/" target="_blank"><img src="assets/img/lowerPage/instagram.png" class="img-fluid" alt="Instagram"></a><br>
+		<a href="contact/contact.html" class="btn btn-lg btn-light">お問合せ</a></div>
+      </div>
+      <div class="col-12">
+        <p class="small text-left">© 2025 CocoColor All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="assets/js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="assets/js/popper.min.js"></script> 
+<script src="assets/js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

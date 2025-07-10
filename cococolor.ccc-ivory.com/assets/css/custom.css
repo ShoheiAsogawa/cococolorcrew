@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+
+
+
+.luxbar-menu-dark,
+.luxbar-menu-dark ul li{
+	background-color: #E38A2A;
+	color: #fff;
+}
+.luxbar-menu-dark .luxbar-item:hover{
+	background-color: #AA6622;
+}
+
+
+/* 通常のボタン色 */
+.btn-custom,
+.btn-custom.disabled, .btn-custom:disabled {
+  color: #fff;
+  background-color: #DF6526;
+  border-color: #DF6526;
+}
+
+/* focusされた時の枠線の色 */
+.btn-custom:focus, .btn-custom.focus,
+.btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(200, 123, 255, 0.5);
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-custom:hover {
+  color: #fff;
+  background-color: #C45523;
+  border-color: #C45523;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+.show > .btn-custom.dropdown-toggle {
+  color: #fff;
+  background-color: #C45523;
+  border-color: #C45523;
+}
+dt{
+	background: #E38A2A;
+	color: #fff;
+	border-top: 1px solid #fff;
+}
+dd{
+	background: #E0E0E0;
+	color: #222222;
+}
+
+ol {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0.5em;
+}
+
+ol li {
+  position: relative;
+  line-height: 1.5em;
+  padding: 1em 1em 1em 5rem;
+}
+
+ol li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*数字のデザイン変える*/
+  display:inline-block;
+  background: #E38A2A;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 3rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  /*以下上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+footer{
+	background: #E38A2A;
+	color: #fff;
+}
+footer hr{
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+footer ul li a:hover{
+	color: #fff;
+}
+
+#price{
+	background-color: #F49971;
+}
+
+
+/* blog */
+
+#logon{
+	height: 100vh;
+	background: linear-gradient(-135deg, #E38A2A, #F5CB47);
+}
+#logon .loginBox{
+	background: #fff;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+#blog aside h3{
+	border-left: solid 5px #E38A2A;
+	padding-left: 1rem;
+}
+
+#blog #post h2,
+#blog #post h3,
+#blog #post h4{
+	padding: 0.25em 0.5em;
+	background: transparent;
+	border-left: solid 5px #E38A2A;
+}
+#blog #post ul {
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+
+#blog #post ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;/*ポチ消す*/
+}
+
+#blog #post ul li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  position: absolute;
+  left : 1em; 
+  color: #E38A2A;
+}
+#blog #post ol {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding: 0.3em 0.8em;
+}
+#blog #post ol li {
+  border-bottom: dashed 1px #E38A2A;
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 30px;
+  line-height: 1.5em;
+}
+#blog #post ol li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*数字のデザイン変える*/
+  display:inline-block;
+  background: #E38A2A;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#blog #post ol li:last-of-type {
+  border-bottom: none; /*最後のliの線だけ消す*/
+}
+
+blockquote {
+    position: relative;
+    padding: 35px 15px 10px 15px;
+    box-sizing: border-box;
+    font-style: italic;
+    background: #f5f5f5;
+    color: #777777;
+    border-left: 4px solid #E38A2A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    color: #E38A2A;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 7px 0;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
+#post a{
+	text-decoration: underline;
+	color: #7BB1F4;
+}
+#blog .sideBar ul li a{
+	background: #E38A2A;
+	padding: 5px;
+	color: #fff;
+}
+#blog .sideBar ul li a:hover{
+	opacity: .5;
+}
+/*thanksページメッセージ*/
+/* 
+.custom002{
+	position: absolute;
+	top:425px;
+	background: #fff;
+	padding: 25px;
+	opacity: .8;
+}
+*/
+
+.bottom{
+	margin-top: 30rem;
+}
+
+.custom002{
+	position:relative;
+	top: 180px;
+	left:-210px;
+}
+.custom003{
+	position:relative;
+	top: 180px;
+	left:-190px;
+}

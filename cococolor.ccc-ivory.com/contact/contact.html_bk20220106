@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="../fav.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../icon.png" />
+<title>Coco Color</title>
+
+<!--CSS -->
+<link href="../assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/luxbar.min.css">
+<link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="stylesheet" href="../assets/css/custom.css" />
+<link rel="canonical" href="../http://ccc-ivory.com" />
+<meta name="description" content="ご質問ございましたら、大阪市港区の児童発達支援・放課後等デイサービス　CocoColor(ココカラー) へお気軽にお問合せ下さい。見学体験も随時受付しております♪" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="児童発達支援・放課後等デイサービスCoco Color" />
+<meta property="og:title" content="Coco Color｜お問い合わせ" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:description" content="ご質問ございましたら、大阪市港区の児童発達支援・放課後等デイサービス　CocoColor(ココカラー) へお気軽にお問合せ下さい。見学体験も随時受付しております♪" />
+<meta property="og:url" content="ccc-ivory.com" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://ccc-ivory.com/assets/img/common/hero.png" />
+<meta property="og:image:width" content="1360" />
+<meta property="og:image:height" content="600" />
+
+<!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav id="luxbar" class="luxbar-fixed">
+    <div class="luxbar luxbar-static">
+      <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+        <ul class="luxbar-navigation">
+          <li class="luxbar-header"> <a href="../index.html" class="luxbar-brand">Coco Color</a>
+            <label class="luxbar-hamburger luxbar-hamburger-doublespin"
+                        for="luxbar-checkbox"> <span></span> </label>
+          </li>
+          <li class="luxbar-item dropdown"><a href="../index.html">Coco Colorとは</a>
+            <ul>
+              <li class="luxbar-item" ><a href="../process.html">ご利用までの流れ・料金</a></li>
+              <li class="luxbar-item" ><a href="../service.html">一日の流れ</a></li>
+              <li class="luxbar-item" ><a href="../program.html">プログラム内容</a></li>
+            </ul>
+          </li>
+          <li class="luxbar-item"><a href="../blog/">Blog</a></li>
+          <li class="luxbar-item"><a href="contact/contact.html">お問合せ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="d-block d-lg-none d-sm-block my-5">
+		<div class="container">
+		<img src="../assets/img/common/hero.png" class="img-fluid d-block mb-5" alt="" >
+		</div>
+	</div>
+    <div class="container-fluid d-none d-sm-none d-lg-block">
+	<div class="hero d-flex align-items-center mb-5 row">
+        </div>
+    </div>
+</header>
+<main>
+  <section id="">
+    <div class="container">
+      <div class="row flex-row-reverse">
+        <form class="col-md-12 my-5" action="contact.php" method="post">
+			<h2>お問い合わせフォーム</h2>
+			<p>※お急ぎの方はお電話にてお問い合わせください。</p>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0 is-invalid">ご用件</legend>
+              <div class="col-sm-10 row">
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" required>
+                  <label class="form-check-label" for="gridRadios1"> 体験・見学希望 </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2"> その他 </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <label for="inputName" class="col-sm-2 col-form-label">お名前</label>
+            <div class="col-sm-10">
+              <input type="name" class="form-control" id="inputName" name="お名前" placeholder="お名前" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">E-mail</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="E-mail" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputTel" class="col-sm-2 col-form-label">電話番号</label>
+            <div class="col-sm-10">
+              <input type="tel" class="form-control" id="inputTel" name="電話番号" placeholder="電話番号" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textArea">お問合せ内容</label>
+            <textarea class="form-control" id="textArea1" rows="3" name="お問い合わせ内容" placeholder="見学・体験申し込みご希望のお客様は、こちらにご希望の日時・時間をご入力ください。" required></textarea>
+          </div>
+          <button class="btn btn-custom btn-block" type="submit">送信</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-12 col-lg-9 mt-3">
+        <ul class="list-unstyled list-group list-group-horizontal-md">
+          <li class="mx-2"><a href="../index.html">Coco Colorとは</a></li>
+          <li class="mx-2"><a href="../process.html">ご利用までの流れ・料金</a></li>
+          <li class="mx-2"><a href="../service.html">一日の流れ</a></li>
+          <li class="mx-2"><a href="../program.html">プログラム内容</a></li>
+          <li class="mx-2"><a href="../blog/">Blog</a></li>
+          <li class="mx-2"><a href="../process.html#faq">FAQ</a></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="col-12">
+        <p class="small text-left">© 2021 Coco Color All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../assets/js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../assets/js/popper.min.js"></script> 
+<script src="../assets/js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

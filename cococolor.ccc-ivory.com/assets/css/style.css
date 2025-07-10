@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+body{
+	font-family:"M PLUS Rounded 1c", 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+
+.dropdown>ul .luxbar-item a{
+	padding: 1rem;
+}
+
+.hero{
+    background-image: url("../img/common/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+.hero::before {
+  content: '';
+  display: block;
+  padding-top: 50%;
+}
+
+.index-blog a{
+	color: #3A3A3A;
+	text-decoration: none;
+}
+.index-blog a:hover{
+	opacity: .5;
+	color: #3A3A3A;
+	text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    .sm-small{
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 768px ) and (max-width: 992px) {
+    .md-small{
+        font-size: 1.8em;
+    }
+}
+
+dt{
+	cursor: pointer;
+}
+dt:hover{
+	opacity: .7;
+}
+
+
+ol {
+  counter-reset:number; /*数字をリセット*/
+  list-style-type: none!important; /*数字を一旦消す*/
+  padding:0;
+}
+ol li:before{
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*数字のデザイン変える*/
+  display:inline-block;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight:bold;
+  font-size: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -50px;
+  width: 50px;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+}
+
+footer hr{
+	height: 1px;
+	border: none;
+}
+
+
+/*  blog   */
+
+#blog a{
+	color: #3a3a3a;
+}
+#blog a:hover{
+	text-decoration: none;
+}
+
+#blog .newtArticle:hover,
+#blog .article:hover{
+	opacity: .7;
+}
+
+
+#blog aside .my-5 ul li a:hover{
+	color: #ccc;
+}
+
+/*login*/
